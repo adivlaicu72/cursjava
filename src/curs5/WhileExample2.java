@@ -21,12 +21,21 @@ public class WhileExample2 {
 			
 		} */
 		
-		int nr = scan.nextInt();
+		/* int nr = scan.nextInt();
 		while(nr != 0) {
 			System.out.println(nr*10);
 			System.out.println("Please enter a number :");
 			nr = scan.nextInt();
 		}
+		*/
+		
+		int nr2;
+		do {
+			System.out.println("Please enter a number :");
+			nr2 = scan.nextInt();
+			System.out.println(nr2*10);
+			
+		}while(nr2 != 0);
 
 	}
 }
