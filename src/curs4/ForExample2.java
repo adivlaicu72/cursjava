@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class ForExample2 {
 	
 	/*
-	 * facem un program care ii cere userului programe incontinuu
+	 * facem un program care ii cere userului  incontinuu
 	 * le inmulteste cu 10
 	 * face asta pana cand userul introduce 0
 	 * daca a introdus 0, face exit din loop
