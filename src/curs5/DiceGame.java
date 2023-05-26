@@ -15,20 +15,44 @@ public class DiceGame {
 	 */
 
 	public static void main(String[] args) {
-		Scanner scan = new Scanner(System.in);
+
+		Scanner scan  = new Scanner(System.in);
 		int dice1;
 		int dice2;
-		boolean startJoc = true;
-		dice1 = (int) Math.random()*6+1;
-		dice2 = (int) Math.random()*6+1;
-		int total = dice1 + dice2;
-		System.out.println("Ai dat :" + total);
-		
-		
+		boolean startJoc =  true;
 
-		while((total == 4 || total == 8 ||total == 11) && startJoc) {
+		
+		while(startJoc) {
+			
+			dice1 = (int)(Math.random()*6+1);
+			dice2 = (int)(Math.random()*6+1);
+			int total = dice1 + dice2;
+			System.out.println("Ai dat :" + total);
+
+			if(total ==2 || total == 6 || total == 12) {
+				System.out.println("Imi pare rau. Ai dat " + total + " Ai pierdut");
+				//break;
+				startJoc = false;
+				
+			}else if(total ==4 || total == 8 || total == 11) {
+				System.out.println("Automat mai dai o data");
+			
+			}else if(total ==3 || total == 7 ) {
+				System.out.println("You`re the winner!");
+				startJoc = false;
+			}else {
+				System.out.println("Ai dat :" + total + " Mai vrei sa joci ?");
+				String raspuns = scan.next();
+				if(raspuns.equalsIgnoreCase("yes")){
+					startJoc = true;
+				}else {
+					startJoc = false;
+				}
+			}
 			
 		}
+		System.out.println("Game over!");
+	
 	}
 
 }
