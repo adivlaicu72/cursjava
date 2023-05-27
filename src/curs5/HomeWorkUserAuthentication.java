@@ -1,7 +1,7 @@
 package curs5;
 import java.util.Scanner;
 
-public class UserAuthentication {
+public class HomeWorkUserAuthentication {
 	/*
 	 *  Scriem un program care simuleaza un login.
 		Programul primeste input de la utilizator un user si o parola.
