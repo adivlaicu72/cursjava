@@ -41,8 +41,6 @@ public class Homework_Ex1_User_Login_Validator {
 				password = scan.nextLine();
 	
 		
-	
-		
 		if (username.equals(username) && password.equals(password)) 
 			{
 				validCredentials = true;	
@@ -63,7 +61,9 @@ public class Homework_Ex1_User_Login_Validator {
 				}
 			}	
 	}
+	
 }
+
 
 
 
