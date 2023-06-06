@@ -1,25 +1,25 @@
 package curs2;
 
-public class Shape {
+public class Homework_Shape {
 		//variabile
 		private int lenght;
 		private int width;
 		private double radius;
 		
 		//constructor patrat
-		public Shape(int lenght) {
+		public Homework_Shape(int lenght) {
 			this.setLenght(lenght);
 	
 		}
 		
 		//constructor dreptunghi
-		public Shape(int lenght, int width) {
+		public Homework_Shape(int lenght, int width) {
 			this.setLenght(lenght);
 			this.setWidth(width);
 		}
 		
 		//constructor cerc
-		public Shape(double radius) {
+		public Homework_Shape(double radius) {
 			this.setRadius(radius);
 		}
 		

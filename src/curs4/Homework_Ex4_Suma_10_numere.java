@@ -2,7 +2,7 @@ package curs4;
 
 import java.util.Scanner;
 
-public class Ex4 {
+public class Homework_Ex4_Suma_10_numere {
 	
 	/*
 	 * facem un program care ii cere userului 10 numere
@@ -10,23 +10,17 @@ public class Ex4 {
      * printam sub urmatoarea forma : The sum of the numbers is:
 	 * 
 	 */
-	int n;
 
 	public static void main(String[] args) {
 		
 		Scanner scan = new Scanner(System.in);
-		System.out.println("Please enter a number :" +n);
-		
-		
-		/* for(;;) {
-			int nr = scan.nextInt();
-			if(nr == 0) {
-				break;
-			}
-			System.out.println("Please enter a number :");
-			System.out.println(nr*10);
+		int sum = 0;
+		for (int i = 0; i < 10; i+=1 ) {
+			sum += scan.nextInt();
+		}
 			
-		} */
+		System.out.println("The sum of the numbers is: " + sum);
+		
 	}
 
 }
