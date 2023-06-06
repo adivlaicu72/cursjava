@@ -12,11 +12,12 @@ public class ExceptionExample3 {
 		} catch(Exception e) {
 			System.out.println("Exception occured");
 			
+			System.out.println("Code after try catch");
 			
 		} finally {
 			System.out.println("Finnaly block of code");
 		}
 
-	} 
+	}  
 
 }
