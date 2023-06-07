@@ -13,12 +13,14 @@ public class Homework_Ex4_Suma_10_numere {
 
 	public static void main(String[] args) {
 		
+		
 		Scanner scan = new Scanner(System.in);
+		System.out.println("Te rog introdu cele zece numere: ");
 		int sum = 0;
 		for (int i = 0; i < 10; i+=1 ) {
 			sum += scan.nextInt();
 		}
-			
+		scan.close();	
 		System.out.println("The sum of the numbers is: " + sum);
 		
 	}

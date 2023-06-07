@@ -10,23 +10,23 @@ public void askTheNumberOfPoints() {
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Te rog introdu punctajul: ");
 		punctaj = scan.nextInt();
+		scan.close();
 		
 	}
 
 
 public void compareTheNumberOfPoints() {
 		
-		if ( punctaj> 0 && punctaj <= 65) {
-			Scanner scan = new Scanner(System.in);
+		if ( punctaj>= 0 && punctaj <= 65) {
+			
 			System.out.println("Ai picat. Mai Incearca !");
-			punctaj = scan.nextInt();
 		
 			}
 		
 		else if (punctaj >= 66) {
-			Scanner scan = new Scanner(System.in);
+		
 			System.out.println("Felicitari, Ai trecut !");
-			punctaj = scan.nextInt();
+		
 	
 			}
 

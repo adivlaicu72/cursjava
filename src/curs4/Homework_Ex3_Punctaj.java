@@ -11,7 +11,10 @@ public class Homework_Ex3_Punctaj {
 		int punctaj = scan.nextInt();
 		scan.close();
 		
-		String calificativ = (punctaj >= 90)? "Foarte Bine" : (punctaj >= 80) ? "Bine" : "Suficient";
+		String calificativ = (punctaj >= 90)? "FB" : 
+			(punctaj<90&&punctaj>=80)?"B":"S";
+		String rezultat = (calificativ == "FB" )? "Ai primit : FoarteBine" : (calificativ == "B") ?"Ai primit : Bine":"Ai primit : Suficient";
+		System.out.println(rezultat);
 		System.out.println("Calificativul este: " +calificativ);
 	}
 

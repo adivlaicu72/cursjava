@@ -9,6 +9,8 @@ public class Homework_Shape {
 		//constructor patrat
 		public Homework_Shape(int lenght) {
 			this.setLenght(lenght);
+			System.out.println("The area of the square is: " +calculateSquareArea(8));
+			
 	
 		}
 		
@@ -16,11 +18,13 @@ public class Homework_Shape {
 		public Homework_Shape(int lenght, int width) {
 			this.setLenght(lenght);
 			this.setWidth(width);
+			System.out.println("The area of the rectangle is: " +calculateSquareArea(4, 2));
 		}
 		
 		//constructor cerc
 		public Homework_Shape(double radius) {
-			this.setRadius(radius);
+			this.setRadius(radius);	
+			System.out.println("The area of the circle is: " +calculateCircleArea(3.0));
 		}
 		
 		
@@ -39,8 +43,10 @@ public class Homework_Shape {
 		public double calculateCircleArea(double radius) {
 			double circleArea = Math.PI * radius * radius;
 			return circleArea;
+			
 		}
 
+	
 		public double getRadius() {
 			return radius;
 		}

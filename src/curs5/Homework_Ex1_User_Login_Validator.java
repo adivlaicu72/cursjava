@@ -24,45 +24,37 @@ public class Homework_Ex1_User_Login_Validator {
 	
 	public static void main(String args[]) {
 		
-		
-
-		String username = "TestUser";
-		String password = "1234";
-		
 		int totalAttempts = 3; //attempt counter
 		boolean validCredentials = false;
-		
-		try (Scanner scan = new Scanner(System.in)) {
-			while (totalAttempts > 0 && !validCredentials) {
-				
-				System.out.print("Enter the username: ");
-				username = scan.nextLine();
-				System.out.print("Enter the password: ");
-				password = scan.nextLine();
 	
-		
-		if (username.equals(username) && password.equals(password)) 
-			{
-				validCredentials = true;	
-				System.out.println("Login successful");
-		
+		  try (Scanner scan = new Scanner(System.in)) {
+			  
+			  while (totalAttempts > 0 && !validCredentials) {
+	            System.out.print("Enter the user name: ");
+	            String username = scan.nextLine();
+
+	            System.out.print("Enter the password: ");
+	            String password = scan.nextLine();
+
+	            	if ("TestUser".equals(username) && "1234".equals(password)) {
+	                System.out.println("Login successful");
+	                break;
+	            	} else {
+	            				totalAttempts--;
+	            				System.out.println("Login error");
+	            			}
+	            				if (totalAttempts==0) {
+	            				System.out.println("Maximum attempts reached. User blocked!");
 			
-			} else {
-				totalAttempts--;
-				System.out.println("Login error!");
-			}
-				
-		}
-			
-		
-			if (totalAttempts==0) {
-				System.out.println("Maximum attempts reached. User blocked");
-			
-				}
-			}	
+	            					}
+			  } 
+	    }
 	}
-	
 }
+				
+	
+	
+
 
 
 
