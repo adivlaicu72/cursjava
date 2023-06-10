@@ -23,7 +23,7 @@ public class Homework_Ex1_User_Login_Validator {
 
 	
 	public static void main(String args[]) {
-		
+	
 		int totalAttempts = 3; //attempt counter
 		boolean validCredentials = false;
 	
@@ -34,9 +34,9 @@ public class Homework_Ex1_User_Login_Validator {
 	            String username = scan.nextLine();
 
 	            System.out.print("Enter the password: ");
-	            String password = scan.nextLine();
+	            Integer password = scan.nextInt();
 
-	            	if ("TestUser".equals(username) && "1234".equals(password)) {
+	            	if ("TestUser".equals(username) && "1234".equals(password.toString())) {
 	                System.out.println("Login successful");
 	                break;
 	            	} else {
