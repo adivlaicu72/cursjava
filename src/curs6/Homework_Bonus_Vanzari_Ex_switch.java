@@ -31,11 +31,12 @@ public class Homework_Bonus_Vanzari_Ex_switch {
 				bonus 1200
 	 */
 
+	static Scanner scan = new Scanner(System.in);
+	
 	public static void main(String[] args) {
-		Scanner an = new Scanner(System.in);
-		System.out.println("Te rog introdu numarul de ani de vechime: ");
-		int anVechime = an.nextInt();
-		an.close();
+		
+		System.out.println("Te rog introdu numarul de ani de vechime in intervalul 1-3: ");
+		int anVechime = scan.nextInt();
 		
 		switch(anVechime) {
 		case 1: 
@@ -47,55 +48,56 @@ public class Homework_Bonus_Vanzari_Ex_switch {
 		
 		case 3:
 			
-			Scanner luna = new Scanner(System.in);
 			System.out.println("Te rog introdu luna vanzari: ");
-			int lunaVanzari = luna.nextInt();
-			luna.close();
-			Scanner vanzari = new Scanner(System.in);
+			int lunaVanzari = scan.nextInt();
 			System.out.println("Te rog introdu valoare vanzari: ");
-			int valoareVanzari = vanzari.nextInt();
-			vanzari.close();
+			int valoareVanzari = scan.nextInt();
 			
 			if (valoareVanzari <= 5000) {
 				System.out.println("Primesti un bonus de 600 lei");
 			}
-			
-			switch(lunaVanzari) {
-			case 1:
-			case 2:
-			case 3:
-			case 4:
-			case 5:
-			case 6:
-			if (valoareVanzari <= 10000) {
+			else if (valoareVanzari > 10000) {
+				System.out.println("Primesti un bonus de 1200 lei");
+			}else {
+				switch(lunaVanzari) {
+				case 1:
+				case 2:
+				case 3:
+				case 4:
+				case 5:
+				case 6:
+					if (valoareVanzari <= 10000) {
 					System.out.println("Primesti un bonus de 800 lei");
 				}
-			break;
-			case 7:
-			case 8:
-			case 9:
-			case 10:
-			case 11:
-			if (valoareVanzari <= 10000) {
+				break;
+				case 7:
+				case 8:
+				case 9:
+				case 10:
+				case 11:
+				if (valoareVanzari <= 10000) {
 					System.out.println("Primesti un bonus de 1000 lei");
-				}
-			break;
-			case 12:
-			if (valoareVanzari <= 10000) {
+						}
+				break;
+				case 12:
+				if (valoareVanzari <= 10000) {
 					System.out.println("Primesti un bonus de 900 lei");
 					System.out.println("In decembrie se vand singure!");
 				}
-			break;	
-		
-			default: 	
-			if (valoareVanzari > 10000) {
+				break;
+				default:
+					if (valoareVanzari > 10000) {
 					System.out.println("Primesti un bonus de 1200 lei");
-
-
-		}
-	
+				}
+				}
+				}
 		}
 	}
 }
-}
+	
+
+
+			
+	
+
 
